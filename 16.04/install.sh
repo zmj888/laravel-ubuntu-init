@@ -6,7 +6,8 @@ source ${CURRENT_DIR}/../common/common.sh
 
 [ $(id -u) != "0" ] && { ansi -n --bold --bg-red "请用 root 账户执行本脚本"; exit 1; }
 
-MYSQL_ROOT_PASSWORD=`random_string`
+#MYSQL_ROOT_PASSWORD=`random_string`
+MYSQL_ROOT_PASSWORD="running727A"
 
 function init_system {
     export LC_ALL="en_US.UTF-8"
