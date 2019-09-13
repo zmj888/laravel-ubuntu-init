@@ -41,10 +41,10 @@ function init_repositories {
     #echo 'deb https://mirrors.tuna.tsinghua.edu.cn/nodesource/deb_8.x xenial main' > /etc/apt/sources.list.d/nodesource.list
     #echo 'deb-src https://mirrors.tuna.tsinghua.edu.cn/nodesource/deb_8.x xenial main' >> /etc/apt/sources.list.d/nodesource.list
 	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse' > /etc/apt/sources.list
-	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse' > /etc/apt/sources.list
-	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse' > /etc/apt/sources.list
-	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse' > /etc/apt/sources.list
-	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse' > /etc/apt/sources.list
+	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse' >> /etc/apt/sources.list
+	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse' >> /etc/apt/sources.list
+	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse' >> /etc/apt/sources.list
+	echo 'deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse' >> /etc/apt/sources.list
     apt-get update
 }
 
